@@ -37,10 +37,92 @@ h1,h2,h3{color:#fff;}
 .card p{margin:0.2rem 0;}
 .card strong{font-size:1.2rem;color:#fff;}
 
-/* Network */
-.network{padding:3rem 2rem;text-align:center;background:#222;}
-.network h2{margin-bottom:1rem;}
-.network p{font-size:1.1rem;}
+/* Rent a PC Section - replaces network section */
+.rent-pc {
+  padding: 4rem 2rem;
+  background: linear-gradient(145deg, #1b1b2a 0%, #0f0f1a 100%);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.rent-pc:before {
+  content: "💻";
+  font-size: 180px;
+  opacity: 0.04;
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  pointer-events: none;
+  transform: rotate(10deg);
+}
+
+.rent-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(8px);
+  border-radius: 56px;
+  padding: 2.5rem 2rem;
+  border: 1px solid rgba(156, 39, 176, 0.4);
+  box-shadow: 0 20px 35px -10px rgba(0,0,0,0.6);
+}
+
+.rent-pc h2 {
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(120deg, #fff, #ce93d8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.rent-pc .rent-description {
+  font-size: 1.25rem;
+  margin: 1rem 0 1.8rem 0;
+  color: #e2e2e2;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+
+.rent-btn {
+  background: #ff9800;
+  color: #111;
+  padding: 1rem 2.2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 60px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s;
+  box-shadow: 0 6px 0 #b45f06;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.rent-btn:hover {
+  background: #ffb74d;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 14px rgba(255,152,0,0.4);
+  text-decoration: none;
+}
+
+.rent-btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #b45f06;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .rent-pc h2 { font-size: 1.9rem; }
+  .rent-container { padding: 1.8rem 1rem; }
+  .rent-description { font-size: 1rem; }
+}
 
 /* Team */
 .team{padding:4rem 2rem;background:#1b1b1b;}
@@ -116,9 +198,19 @@ h1,h2,h3{color:#fff;}
   </div>
 </section>
 
-<section class="network">
-  <h2>Ultra‑Fast Connectivity</h2>
-  <p>800Mbps Unifi Fiber – 5G ready, no lag.</p>
+<section class="rent-pc">
+  <div class="rent-container">
+    <h2>💻 Rent a PC 🔥</h2>
+    <div class="rent-description">
+      Need a high-performance desktop for gaming, streaming, coding, or design?  
+      Choose from our premium gaming rigs or quiet workstations.  
+      Flexible hourly, daily, and monthly plans — just plug & play!
+    </div>
+    <a href="https://forms.gle/ksQcXuChGxLv2msU6" target="_blank" rel="noopener noreferrer" class="rent-btn">
+      📝 Rent Now → Secure your slot
+    </a>
+    <p style="margin-top: 1.3rem; font-size: 0.85rem; opacity: 0.8;">✨ Fast booking • Ultra-low latency • 24/7 support</p>
+  </div>
 </section>
 
 <section class="team">
