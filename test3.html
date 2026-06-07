@@ -1,0 +1,171 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <style>```
+/* General Reset & Base */
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Segoe UI',Arial,Helvetica,sans-serif;color:#e0e0e0;background:#111;line-height:1.6;}
+a{color:#9c27b0;text-decoration:none;}
+a:hover{color:#e040fb;}
+img{max-width:100%;display:block;}
+h1,h2,h3{color:#fff;}
+
+/* Header Hero */
+.hero{background:url('hero-bg.jpg') center/cover no-repeat;height:70vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:0 1rem;}
+.hero h1{font-size:3rem;margin-bottom:0.5rem;}
+.hero p{font-size:1.4rem;background:rgba(0,0,0,0.5);padding:0.5rem 1rem;border-radius:8px;}
+
+/* Buttons */
+.btn-primary{background:#9c27b0;color:#fff;padding:0.8rem 1.6rem;border:none;border-radius:6px;font-size:1rem;cursor:pointer;transition:background 0.3s;}
+.btn-primary:hover{background:#e040fb;}
+.btn-secondary{background:#2196f3;color:#fff;padding:0.8rem 1.6rem;border:none;border-radius:6px;font-size:1rem;cursor:pointer;transition:background 0.3s;}
+.btn-secondary:hover{background:#42a5f5;}
+
+/* Services */
+.services{padding:4rem 2rem;background:#1e1e1e;}
+.services h2{text-align:center;margin-bottom:2rem;}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem;}
+.card{background:#2a2a2a;padding:1.5rem;border-radius:10px;text-align:center;}
+.card.gaming{border-top:4px solid #9c27b0;}
+.card.workspace{border-top:4px solid #2196f3;}
+.card.private{border-top:4px solid #ff5722;}
+.card.membership{border-top:4px solid #ffeb3b;color:#fff;}
+.card h3{margin-bottom:0.5rem;}
+.card p{margin:0.2rem 0;}
+.card strong{font-size:1.2rem;color:#fff;}
+
+/* Network */
+.network{padding:3rem 2rem;text-align:center;background:#222;}
+.network h2{margin-bottom:1rem;}
+.network p{font-size:1.1rem;}
+
+/* Team */
+.team{padding:4rem 2rem;background:#1b1b1b;}
+.team h2{text-align:center;margin-bottom:2rem;}
+.members{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1.5rem;justify-items:center;}
+.member{background:#2a2a2a;padding:1rem;border-radius:8px;text-align:center;}
+.member img{border-radius:50%;margin-bottom:0.5rem;width:80px;height:80px;}
+.member p{color:#ddd;margin-top:0.5rem;}
+
+/* Location */
+.location{padding:4rem 2rem;text-align:center;background:#1e1e1e;}
+.location h2{margin-bottom:1rem;}
+.location p{font-size:1.2rem;margin-bottom:1rem;}
+
+/* Contact */
+.contact{background:rgba(0,0,0,0.2);border-radius:12px;text-align:center;margin:4rem 2rem; padding:2rem;}
+.contact h2{margin-bottom:1rem;font-size:2rem;}
+.contact-details p{font-size:1.1rem;color:#bdbdbd;}
+.contact-details p strong{color:#fff;}
+
+/* Footer */
+.footer{background:#111;padding:1rem 0;text-align:center;font-size:0.9rem;color:#777;}
+
+/* Media Queries */
+@media(max-width:768px){
+  .hero h1{font-size:2.2rem;}
+  .hero p{font-size:1.2rem;}
+}
+```</style>
+        </head>
+        <body>
+          <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Plato Cyber Café – Gaming & Workspace Hub</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+</head>
+<body>
+<header class="hero">
+  <h1>Plato Cyber Café</h1>
+  <p>Gaming & Work – All in One Place</p>
+</header>
+
+<section class="services">
+  <h2>Our Offerings</h2>
+  <div class="cards">
+    <div class="card gaming">
+      <h3>Gaming Stations</h3>
+      <p>Intel i7, RTX 3060 PCs equip with top notch peripherals</p>
+      <p><strong>RM6/hr</strong></p>
+      <p><strong>RM40 Day Pass</strong></p>
+    </div>
+    <div class="card workspace">
+      <h3>Open Workspace PCs</h3>
+      <p>Work‑friendly stations</p>
+      <p><strong>RM10/hr</strong></p>
+      <p><strong>RM50 Day Pass</strong></p>
+    </div>
+    <div class="card private">
+      <h3>Private Cubicles</h3>
+      <p>Quiet, distraction-free environment</p>
+      <p><strong>RM5/hr</strong></p>
+      <p><strong>RM20 Day Pass</strong></p>
+    </div>
+    <div class="card membership">
+      <h3>Monthly Membership</h3>
+      <p>Unlimited use of all stations</p>
+      <p><strong>RM150</strong></p>
+    </div>
+  </div>
+</section>
+
+<section class="network">
+  <h2>Ultra‑Fast Connectivity</h2>
+  <p>800Mbps Unifi Fiber – 5G ready, no lag.</p>
+</section>
+
+<section class="team">
+  <h2>Meet the Team</h2>
+  <div class="members">
+    <div class="member"><img src="member1.jpg" alt="Member 1"><p>Alex – Founder</p></div>
+    <div class="member"><img src="member2.jpg" alt="Member 2"><p>Ravi – Manager</p></div>
+    <div class="member"><img src="member3.jpg" alt="Member 3"><p>Leah – Support</p></div>
+    <div class="member"><img src="member4.jpg" alt="Member 4"><p>Mike – Tech Lead</p></div>
+    <div class="member"><img src="member5.jpg" alt="Member 5"><p>Sarah – Marketing</p></div>
+  </div>
+</section>
+
+<!--
+<section class="location">
+  <h2>Location</h2>
+  <p>Cyberjaya, Selangor</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+-->
+
+<section class="contact">
+  <h2>Contact Us</h2>
+  <div class="contact-details">
+    <p><strong>Address:</strong> Durian Tunggal, Melaka</p>
+    <p><strong>Email:</strong> info@nexuscybercafe.com</p>
+    <p><strong>Phone:</strong> +60 12 345 6789</p>
+    <p><strong>Hours:</strong> Mon–Sat 10:00–22:00</p>
+  </div>
+  <!--<a href="#" class="btn-primary">Reserve Now</a>-->
+</section>
+
+<footer class="footer">
+  <p>&copy; 2026 Nexus Cyber Café – All Rights Reserved</p>
+</footer>
+</body>
+</html>
+
+          <script>```
+/* Button click feedback */
+document.querySelectorAll('.btn-primary, .btn-secondary').forEach(btn => {
+  btn.addEventListener('click', e => {
+    e.preventDefault();
+    alert('Thank you for exploring Nexus Cyber Café!');
+  });
+});
+```</script>
+        </body>
+        </html>
+      
