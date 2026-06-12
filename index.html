@@ -17,6 +17,15 @@ h1,h2,h3{color:#fff;}
 .hero{background:url('hero-bg.jpg') center/cover no-repeat;height:70vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:0 1rem;}
 .hero h1{font-size:3rem;margin-bottom:0.5rem;}
 .hero p{font-size:1.4rem;background:rgba(0,0,0,0.5);padding:0.5rem 1rem;border-radius:8px;}
+/* Hero Text Card - semi transparent layer */
+.hero-content {
+  background: rgba(0, 0, 0, 0.65);
+  padding: 2rem 3rem;
+  border-radius: 16px;
+  display: inline-block;
+  backdrop-filter: blur(2px);
+  border-left: 4px solid #9c27b0;
+}
 
 /* Buttons */
 .btn-primary{background:#9c27b0;color:#fff;padding:0.8rem 1.6rem;border:none;border-radius:6px;font-size:1rem;cursor:pointer;transition:background 0.3s;}
@@ -106,8 +115,10 @@ h1,h2,h3{color:#fff;}
 </head>
 <body>
 <header class="hero">
-  <h1>Plato Cyber Café</h1>
-  <p>Gaming & Work – All in One Place</p>
+  <div class="hero-content">
+    <h1>Plato Cyber Café</h1>
+    <p>Gaming & Work – All in One Place</p>
+  </div>
 </header>
 
 <section class="services">
