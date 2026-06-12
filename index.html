@@ -57,8 +57,20 @@ h1,h2,h3{color:#fff;}
 .team{padding:4rem 2rem;background:#1b1b1b;}
 .team h2{text-align:center;margin-bottom:2rem;}
 .members{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1.5rem;justify-items:center;}
-.member{background:#2a2a2a;padding:1rem;border-radius:8px;text-align:center;}
-.member img{border-radius:50%;margin-bottom:0.5rem;width:80px;height:80px;}
+.member {
+  background: #2a2a2a;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 180px;
+}
+.member img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
 .member p{color:#ddd;margin-top:0.5rem;}
 
 /* Location */
@@ -111,13 +123,13 @@ h1,h2,h3{color:#fff;}
       <h3>Open Workspace PCs</h3>
       <p>Work‑friendly stations</p>
       <p><strong>RM10/hr</strong></p>
-      <p><strong>RM50 Day Pass</strong></p>
+      <p><strong>RM20 Day Pass</strong></p>
     </div>
     <div class="card private">
       <h3>Private Cubicles</h3>
       <p>Quiet, distraction-free environment</p>
       <p><strong>RM5/hr</strong></p>
-      <p><strong>RM20 Day Pass</strong></p>
+      <p><strong>RM50 Day Pass</strong></p>
     </div>
     <div class="card membership">
       <h3>Monthly Membership</h3>
